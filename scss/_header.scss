@@ -1,6 +1,6 @@
 .navbar {
   padding: 10px 40px 10px 40px;
-  background-color: rgb(25, 24, 24);
+  background-color: rgb(41, 40, 40);
   height: 4rem;
 }
 .navdiv {
@@ -15,11 +15,12 @@
     a {
       text-decoration: none;
       color: white;
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-right: 35px;
+      display: block;
 
       &:hover {
-        color: #ffcc00;
+        color: #d59148;
         transition: all ease-in-out;
       }
     }
