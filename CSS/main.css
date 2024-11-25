@@ -115,3 +115,28 @@ a {
   text-decoration: none;
   margin-left: 40px;
 }
+
+.text-below {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.text-below p {
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-below {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-below {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

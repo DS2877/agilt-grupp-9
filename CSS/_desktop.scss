@@ -69,3 +69,17 @@
     margin-left: 40px;
   }
 }
+
+// styles for div class"text-below"
+.text-below {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+
+  p {
+    margin: 20px;
+  }
+}

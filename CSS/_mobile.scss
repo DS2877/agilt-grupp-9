@@ -1,0 +1,15 @@
+// Tablet screen media querries incase we need them
+@media screen and (max-width: 768px) {
+  .text-below {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+// Mobile screen media querries
+@media screen and (max-width: 480px) {
+  .text-below {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
