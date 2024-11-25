@@ -1,14 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* _reset.scss */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -43,9 +48,15 @@ a {
 }
 
 .navdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .navdiv li {
   list-style: none;
@@ -60,6 +71,7 @@ a {
 }
 .navdiv li a:hover {
   color: #d59148;
+  -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
 }
 .navdiv .logo a {
@@ -100,4 +112,4 @@ a {
 
 .footer-contact a:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=main.css.map */
+}
