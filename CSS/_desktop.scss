@@ -35,7 +35,7 @@
 .navbar {
   padding: 10px 40px 10px 40px;
   background-color: rgb(41, 40, 40);
-  height: 4rem;
+  height: 5rem;
 }
 .navdiv {
   display: flex;
@@ -81,5 +81,39 @@
 
   p {
     margin: 20px;
+  }
+}
+
+// Button styles for signup and signin
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+  gap: 40px;
+
+  .btn {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #d59148;
+      color: white;
+    }
+  }
+
+  .btn-signup {
+    background-color: #ca6549;
+    color: white;
+  }
+
+  .btn-signin {
+    background-color: #5b564f;
+    color: white;
   }
 }
