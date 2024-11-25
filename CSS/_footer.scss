@@ -1,0 +1,31 @@
+.footer {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
