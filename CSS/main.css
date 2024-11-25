@@ -8,7 +8,6 @@ body {
   font-style: normal;
 }
 
-/* _reset.scss */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -126,6 +125,69 @@ a {
 }
 .text-below p {
   margin: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+main .text-left-side,
+main .pic-right-side,
+main .text-below {
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+   }
+
+/* Mobile */
+main .text-left-side,
+main .pic-right-side,
+main .text-below {
+  width: 100%;
+}
+
+main .pic-right-side {
+  background-color: #e8f7ff;  }
+
+main .text-below {
+  margin-bottom: 0;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  .text-left-side,
+  .pic-right-side {
+    width: 50%;
+    height: 50vh;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .text-left-side {
+    margin-right: 10px;
+  }
+
+  .pic-right-side {
+    margin-left: 10px;
+  }
+
+  .text-below {
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
