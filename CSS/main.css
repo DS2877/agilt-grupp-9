@@ -97,35 +97,42 @@ a {
 .navdiv li a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-right: 35px;
   display: block;
 }
 .navdiv li a:hover {
-  color: #d59148;
+  color: #ed8ae3;
   -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
 }
 .navdiv .logo a {
   font-family: "Freckle Face", system-ui;
-  font-weight: 400;
   font-size: 2.5rem;
   font-weight: 600;
   color: white;
   text-decoration: none;
   margin-left: 40px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
 }
 
 .text-below {
   padding: 20px;
-  font-size: 1rem;
-  line-height: 1.5;
   text-align: left;
   max-width: 100%;
   margin: 0 auto;
+  background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
 }
 .text-below p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 40px;
   margin: 20px;
+  color: white;
+  line-height: 1.5;
 }
 
 .button-container {
@@ -139,27 +146,28 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 30px 0 30px 0;
-  gap: 40px;
+  gap: 50px;
 }
 .button-container .btn {
-  padding: 10px 50px;
+  padding: 10px 60px;
   border: none;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .button-container .btn:hover {
-  background-color: #d59148;
+  background-color: #ed8ae3;
   color: white;
 }
 .button-container .btn-signup {
-  background-color: #ca6549;
+  background-color: #8239b7;
   color: white;
 }
 .button-container .btn-signin {
-  background-color: #5b564f;
+  background-color: #b63fa0;
   color: white;
 }
 
@@ -187,7 +195,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
 main .text-left-side,

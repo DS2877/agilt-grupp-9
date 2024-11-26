@@ -14,12 +14,13 @@
   }
 }
 
+// Code from Philip for the main content
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
 main .text-left-side,
@@ -77,3 +78,5 @@ main .text-below {
     margin-top: 20px;
   }
 }
+
+// Philips code ends here
