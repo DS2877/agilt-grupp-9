@@ -53,15 +53,16 @@ main .text-below {
 /* Desktop Layout */
 @media (min-width: 1024px) {
   main {
+    display: flex;
     flex-direction: column;
+    gap: 0;
   }
 
   .text-left-side,
   .pic-right-side {
     width: 50%;
     height: 50vh;
-    margin-bottom: 0;
-    float: left;
+    margin: 0;
   }
 
   .text-left-side {
