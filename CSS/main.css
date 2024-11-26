@@ -3,12 +3,79 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
 }
 
 .navbar {
   padding: 10px 40px 10px 40px;
   background-color: rgb(41, 40, 40);
-  height: 4rem;
+  height: 5rem;
 }
 
 .navdiv {
@@ -39,9 +106,101 @@ body {
   transition: all ease-in-out;
 }
 .navdiv .logo a {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
   font-size: 2.5rem;
   font-weight: 600;
   color: white;
   text-decoration: none;
   margin-left: 40px;
+}
+
+.text-below {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.text-below p {
+  margin: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+main .text-left-side,
+main .pic-right-side,
+main .text-below {
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f5f5; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+  margin-bottom: 20px;
+}
+
+/* Mobile */
+main .text-left-side,
+main .pic-right-side,
+main .text-below {
+  width: 100%;
+}
+
+main .pic-right-side {
+  background-color: #e8f7ff;
+}
+
+main .text-below {
+  margin-bottom: 0;
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+  main {
+    flex-direction: column; 
+  }
+
+  .text-left-side,
+  .pic-right-side {
+    width: 50%;
+    height: 50vh;
+    margin-bottom: 0;
+    float: left; 
+  }
+
+  .text-left-side {
+    margin-right: 10px;
+  }
+
+  .pic-right-side {
+    margin-left: 10px;
+  }
+
+  .text-below {
+    width: 100%; 
+    height: 50vh;
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .text-below {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-below {
+    padding: 10px;
+    font-size: 1rem;
+  }
 }

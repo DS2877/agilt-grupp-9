@@ -1,0 +1,119 @@
+// footer
+.footer {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+//   header navigation styles
+.navbar {
+  padding: 10px 40px 10px 40px;
+  background-color: rgb(41, 40, 40);
+  height: 5rem;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  li {
+    list-style: none;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 35px;
+      display: block;
+
+      &:hover {
+        color: #d59148;
+        transition: all ease-in-out;
+      }
+    }
+  }
+  .logo a {
+    font-family: "Freckle Face", system-ui;
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+}
+
+// styles for div class"text-below"
+.text-below {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+
+  p {
+    margin: 20px;
+  }
+}
+
+// Button styles for signup and signin
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+  gap: 40px;
+
+  .btn {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #d59148;
+      color: white;
+    }
+  }
+
+  .btn-signup {
+    background-color: #ca6549;
+    color: white;
+  }
+
+  .btn-signin {
+    background-color: #5b564f;
+    color: white;
+  }
+}
