@@ -1,11 +1,3 @@
-// Tablet screen media querries incase we need them
-@media screen and (max-width: 768px) {
-  .text-below {
-    padding: 15px;
-    font-size: 1.2rem;
-  }
-}
-
 // Mobile screen media querries
 @media screen and (max-width: 480px) {
   .text-below {
@@ -13,6 +5,23 @@
     font-size: 1rem;
   }
 }
+
+button {
+  width: 35px;
+  height: 35px;
+  background: blue;
+  border: 0;
+}
+
+button span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: red;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
 
 // Code from Philip for the main content
 
@@ -22,21 +31,8 @@ main {
   align-items: center;
   padding: 20px;
 
-button {
-  width: 35px;
-  height: 35px;
-  background: white;
-  border: 0;
-}
+  
 
-button span {
-  display: block;
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  border-radius: 6px;
-  margin-bottom: 4px;
-}
 
   .text-left-side,
   .pic-right-side,
@@ -81,6 +77,5 @@ button span {
     }
   }
 }
-
 
 // Philips code ends here
