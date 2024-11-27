@@ -84,7 +84,6 @@ main h1 {
   width: 100%;
 }
 
-.text-left-side,
 .pic-right-side {
   width: 100%;
   border: 2px solid #ddd;
@@ -93,6 +92,23 @@ main h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
+
+
+.text-left-side {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the H2 in left box */
+.text-left-side h2 {
+  height: 10%;
+}
+
 
 .pic-right-side {
   background-color: #e8f7ff;
