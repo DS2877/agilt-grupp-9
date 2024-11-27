@@ -22,6 +22,22 @@ main {
   align-items: center;
   padding: 20px;
 
+button {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border: 0;
+}
+
+button span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
   .text-left-side,
   .pic-right-side,
   .text-below {
