@@ -1,5 +1,5 @@
 // Mobile screen media queries
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 670px) {
   .text-below {
     padding: 10px;
     font-size: 1rem;
@@ -10,7 +10,7 @@
 
 header {
 
-  .navbar {
+  .navdiv {
     display: none;
   }
 

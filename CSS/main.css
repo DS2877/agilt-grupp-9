@@ -39,13 +39,13 @@ a {
   color: inherit;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 670px) {
   .text-below {
     padding: 10px;
     font-size: 1rem;
   }
 }
-header .navbar {
+header .navdiv {
   display: none;
 }
 header button {
@@ -88,188 +88,171 @@ main .text-below {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 671px) {
   .text-below {
     padding: 10px;
     font-size: 1rem;
   }
-}
-header .navbar {
-  display: flex;
-  padding: 10px 40px 10px 40px;
-  background-color: rgb(41, 40, 40);
-  height: 5rem;
-}
-header .content-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  width: 100%;
-}
-header .text-left-side,
-header .pic-right-side {
-  width: 50%;
-  margin: 0;
-  height: auto;
-}
-header .text-below {
-  width: 100%;
-  margin-top: 20px;
-}
-header .navdiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header .navdiv li {
-  list-style: none;
-  display: inline-block;
-}
-header .navdiv li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  margin-right: 35px;
-  display: block;
-}
-header .navdiv li a:hover {
-  color: #ed8ae3;
-  transition: all ease-in-out;
-}
-header .navdiv .logo a {
-  font-family: "Freckle Face", system-ui;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-  margin-left: 40px;
-  padding: 5px 15px;
-  border-radius: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
-}
-
-.text-below {
-  padding: 20px;
-  text-align: left;
-  max-width: 100%;
-  margin: 0 auto;
-  background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
-}
-.text-below p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding-top: 40px;
-  margin: 20px;
-  color: white;
-  line-height: 1.5;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0 30px 0;
-  gap: 50px;
-}
-.button-container .btn {
-  padding: 10px 60px;
-  border: none;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.button-container .btn:hover {
-  background-color: #ed8ae3;
-  color: white;
-}
-.button-container .btn-signup {
-  background-color: #8239b7;
-  color: white;
-}
-.button-container .btn-signin {
-  background-color: #b63fa0;
-  color: white;
-}
-
-footer {
-  background-color: #6A0DAD;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-footer h2 {
-  margin: 0;
-  font-size: 28px;
-  font-family: "Arial", sans-serif;
-  color: #E6E6FA;
-  margin-bottom: 20px;
-}
-
-footer p {
-  margin: 10px 0;
-  font-size: 14px;
-  color: #E6E6FA;
-}
-
-.social-links {
-  margin-top: 15px;
-}
-
-.social-link {
-  text-decoration: none;
-  margin: 0 12px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: bold;
-  color: #E6E6FA;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-}
-
-.social-link i {
-  margin-right: 8px;
-  font-size: 20px;
-}
-
-.social-link:hover {
-  color: #fff;
-}
-
-.social-link.youtube {
-  background-color: #FF0000;
-}
-
-.social-link.youtube:hover {
-  background-color: #E6E6FA;
-}
-
-.social-link.twitter {
-  background-color: #1DA1F2;
-}
-
-.social-link.twitter:hover {
-  background-color: #E6E6FA;
-}
-
-.social-link.facebook {
-  background-color: #1877F2;
-}
-
-.social-link.facebook:hover {
-  background-color: #E6E6FA;
-}
-
-footer .social-links a {
-  background-color: #9966CC;
-  color: #F5F5F5;
-}
-
-footer .social-links a:hover {
-  background-color: #9370DB;
-  color: #ffffff;
+  header .navbar {
+    display: flex;
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(41, 40, 40);
+    height: 5rem;
+  }
+  header .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+  }
+  header .text-left-side,
+  header .pic-right-side {
+    width: 50%;
+    margin: 0;
+    height: auto;
+  }
+  header .text-below {
+    width: 100%;
+    margin-top: 20px;
+  }
+  header .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .navdiv li {
+    list-style: none;
+    display: inline-block;
+  }
+  header .navdiv li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 35px;
+    display: block;
+  }
+  header .navdiv li a:hover {
+    color: #ed8ae3;
+    transition: all ease-in-out;
+  }
+  header .navdiv .logo a {
+    font-family: "Freckle Face", system-ui;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
+  }
+  .text-below {
+    padding: 20px;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+    background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
+  }
+  .text-below p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 40px;
+    margin: 20px;
+    color: white;
+    line-height: 1.5;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+    gap: 50px;
+  }
+  .button-container .btn {
+    padding: 10px 60px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button-container .btn:hover {
+    background-color: #ed8ae3;
+    color: white;
+  }
+  .button-container .btn-signup {
+    background-color: #8239b7;
+    color: white;
+  }
+  .button-container .btn-signin {
+    background-color: #b63fa0;
+    color: white;
+  }
+  footer {
+    background-color: #6A0DAD;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  footer h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: "Arial", sans-serif;
+    color: #E6E6FA;
+    margin-bottom: 20px;
+  }
+  footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #E6E6FA;
+  }
+  .social-links {
+    margin-top: 15px;
+  }
+  .social-link {
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #E6E6FA;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  .social-link i {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  .social-link:hover {
+    color: #fff;
+  }
+  .social-link.youtube {
+    background-color: #FF0000;
+  }
+  .social-link.youtube:hover {
+    background-color: #E6E6FA;
+  }
+  .social-link.twitter {
+    background-color: #1DA1F2;
+  }
+  .social-link.twitter:hover {
+    background-color: #E6E6FA;
+  }
+  .social-link.facebook {
+    background-color: #1877F2;
+  }
+  .social-link.facebook:hover {
+    background-color: #E6E6FA;
+  }
+  footer .social-links a {
+    background-color: #9966CC;
+    color: #F5F5F5;
+  }
+  footer .social-links a:hover {
+    background-color: #9370DB;
+    color: #ffffff;
+  }
 }/*# sourceMappingURL=main.css.map */
