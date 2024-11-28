@@ -1,4 +1,147 @@
-// footer
+// Desktop screen media queries
+@media screen and (min-width: 481px) {
+  .text-below {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+//   Start HEADER styles
+
+header {
+
+  //  Navigation styles
+  
+  .navbar {
+    display: flex;
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(41, 40, 40);
+    height: 5rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row; // Align children side by side
+    gap: 20px; // Space between children
+    width: 100%; // Ensure full container width
+  }
+
+  .text-left-side,
+  .pic-right-side {
+    width: 50%; // Each takes up half the container
+    margin: 0; // Reset margins
+    height: auto; // Optional: adjust based on content
+  }
+
+  .text-below {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        margin-right: 35px;
+        display: block;
+
+        &:hover {
+          color: #ed8ae3;
+          transition: all ease-in-out;
+        }
+      }
+    }
+
+    .logo a {
+      font-family: "Freckle Face", system-ui;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      margin-left: 40px;
+      padding: 5px 15px;
+      border-radius: 15px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      background: radial-gradient(circle,
+          rgba(130, 57, 183, 1) 0%,
+          rgba(102, 54, 93, 1) 100%);
+    }
+  }
+}
+
+// End HEADER styles
+
+
+
+// Start MAIN styles
+
+// styles for div class"text-below"
+.text-below {
+  padding: 20px;
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+  background: radial-gradient(circle,
+      rgba(130, 57, 183, 1) 0%,
+      rgba(102, 54, 93, 1) 100%);
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 40px;
+    margin: 20px;
+    color: white;
+    line-height: 1.5;
+  }
+}
+
+// Button styles for signup and signin
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+  gap: 50px;
+
+  .btn {
+    padding: 10px 60px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ed8ae3;
+      color: white;
+    }
+  }
+
+  .btn-signup {
+    background-color: #8239b7;
+    color: white;
+  }
+
+  .btn-signin {
+    background-color: #b63fa0;
+    color: white;
+  }
+}
+
+// End MAIN styles
+
+// Start FOOTER styles
 
 footer {
   background-color: #6A0DAD;
@@ -80,106 +223,4 @@ footer .social-links a:hover {
   color: #ffffff;
 }
 
-
-//   header navigation styles
-.navbar {
-  padding: 10px 40px 10px 40px;
-  background-color: rgb(41, 40, 40);
-  height: 5rem;
-}
-.navdiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  li {
-    list-style: none;
-    display: inline-block;
-
-    a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.2rem;
-      margin-right: 35px;
-      display: block;
-
-      &:hover {
-        color: #ed8ae3;
-        transition: all ease-in-out;
-      }
-    }
-  }
-  .logo a {
-    font-family: "Freckle Face", system-ui;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    margin-left: 40px;
-    padding: 5px 15px;
-    border-radius: 15px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background: radial-gradient(
-      circle,
-      rgba(130, 57, 183, 1) 0%,
-      rgba(102, 54, 93, 1) 100%
-    );
-  }
-}
-
-// styles for div class"text-below"
-.text-below {
-  padding: 20px;
-  text-align: left;
-  max-width: 100%;
-  margin: 0 auto;
-  background: radial-gradient(
-    circle,
-    rgba(130, 57, 183, 1) 0%,
-    rgba(102, 54, 93, 1) 100%
-  );
-
-  p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding-top: 40px;
-    margin: 20px;
-    color: white;
-    line-height: 1.5;
-  }
-}
-
-// Button styles for signup and signin
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0 30px 0;
-  gap: 50px;
-
-  .btn {
-    padding: 10px 60px;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #ed8ae3;
-      color: white;
-    }
-  }
-
-  .btn-signup {
-    background-color: #8239b7;
-    color: white;
-  }
-
-  .btn-signin {
-    background-color: #b63fa0;
-    color: white;
-  }
-}
+// End FOOTER styles 
