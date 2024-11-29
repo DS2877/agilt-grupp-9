@@ -120,7 +120,7 @@ main .text-below {
   header .mobilebar {
     display: none;
   }
-  header .content-wrapper {
+  .content-wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
