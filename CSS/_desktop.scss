@@ -19,6 +19,10 @@
       height: 5rem;
     }
 
+    .mobilebar {
+      display: none;
+    }
+
     .content-wrapper {
       display: flex;
       flex-direction: row; // Align children side by side
