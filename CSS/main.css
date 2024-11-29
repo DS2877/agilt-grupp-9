@@ -120,11 +120,13 @@ main .text-below {
   header .mobilebar {
     display: none;
   }
+
+  /* Main Parent */
   .content-wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    width: 100%;
+    width: 80%;
     margin-top: 35px;
     margin-bottom: 50px;
   }
