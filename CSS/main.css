@@ -99,19 +99,19 @@ main .text-below {
     background-color: rgb(41, 40, 40);
     height: 5rem;
   }
-  header .content-wrapper {
+  .content-wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
     width: 100%;
   }
-  header .text-left-side,
-  header .pic-right-side {
+  .text-left-side,
+  .pic-right-side {
     width: 50%;
     margin: 0;
     height: auto;
   }
-  header .text-below {
+  .text-below {
     width: 100%;
     margin-top: 20px;
   }
