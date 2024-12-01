@@ -19,32 +19,29 @@
 
 <body>
   <header>
-    <input type="checkbox" checked>
-    <button class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="mobilebar">
-      <div class="mobilediv">
-        <div class="logo"><a href="#">Blockzter</a></div>
+      <!-- Mobile Nav -->
+    <div class="topnav">
+      <a href="#home" class="active logo">Blocktzer</a>
+      
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+          <a href="#news">Home</a>
+          <a href="#contact">Products</a>
+          <a href="#about">Services</a>
+          <a href="#contacts">Contacts</a>
       </div>
-    </nav>
-    <nav class="navbar">
-      <div class="navdiv">
-        <div class="logo"><a href="#">Blockzter</a></div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </div>
-    </nav>
+      
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </header>
 
   <main>
+    <!--
     <h1>Blockzter</h1>
+    -->
     <div class="content-wrapper">
       <div class="text-left-side">
         <h2>Blockchain</h2>
@@ -100,7 +97,24 @@
     </div>
   </footer>
 
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById("myLinks");
+        const topnav = document.querySelector(".topnav");
+        const body = document.body;
 
+        // Toggle menu visibility
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+            topnav.classList.remove("menu-open");
+            body.style.overflow = "auto"; // Re-enable scrolling
+        } else {
+            menu.style.display = "block";
+            topnav.classList.add("menu-open");
+            body.style.overflow = "hidden"; // Disable scrolling
+        }
+    }
+  </script>
 </body>
 
 </html>
