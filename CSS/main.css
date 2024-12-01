@@ -212,10 +212,25 @@ main .text-below {
     color: white;
   }
   footer {
-    background-color: #6A0DAD;
+    background: linear-gradient(to bottom, #6A0DAD, #E6E6FA);
     color: white;
     padding: 30px 20px;
     text-align: center;
+    border-top: 4px solid #5D3A9B;
+  }
+  footer h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: "Arial", sans-serif;
+    color: #E6E6FA;
+    margin-bottom: 20px;
+  }
+  footer {
+    background: linear-gradient(to bottom, #6A0DAD, #E6E6FA);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 4px solid #5D3A9B;
   }
   footer h2 {
     margin: 0;
