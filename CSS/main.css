@@ -268,6 +268,7 @@ a {
   header .topnav {
     display: none;
   }
+  /* ----------------------------------------  HEADER ------------------------------------ */
   header .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -276,7 +277,6 @@ a {
     background-color: rgb(41, 40, 40);
     height: 5rem;
   }
-  /* ----------------------------------------  HEADER ------------------------------------ */
   header .navdiv {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -287,15 +287,28 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
+  }
+  header .navdiv .logo {
+    margin-right: auto;
+  }
+  header .navdiv ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
   }
   header .navdiv li {
     list-style: none;
-    display: inline-block;
   }
   header .navdiv li a {
     text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+    color: rgb(204, 203, 203);
+    font-size: 1.5rem;
     margin-right: 35px;
     display: block;
   }
@@ -311,10 +324,6 @@ a {
     color: white;
     text-decoration: none;
     margin-left: 40px;
-    padding: 5px 15px;
-    border-radius: 15px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
   }
   /* ----------------------------------------------  MAIN --------------------------------------------- */
   /* Main Parent */
