@@ -40,7 +40,7 @@ a {
 }
 
 /* ---------------------------------- Code for mobile devices ----------------------------*/
-@media screen and (max-width: 670px) {
+@media (max-width: 991.98px) {
   /* ----------------------------------------  HEADER ------------------------------------ */
   header .mobilebar {
     display: flex;
@@ -324,7 +324,7 @@ footer .social-links a:hover {
 }
 
 /* ---------------------------------- Code for desktop devices ----------------------------*/
-@media screen and (min-width: 671px) {
+@media (min-width: 992px) {
   /* ----------------------------------------  HEADER ------------------------------------ */
   header .navdiv {
     display: flex;
