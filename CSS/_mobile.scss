@@ -162,6 +162,27 @@
     background-color: #b63fa0;
     color: white;
   }
+
+  /* ------------------------------ FOOTER ----------------------------------*/
+
+  .social-links {
+    flex-direction: column; /* Stack social links vertically */
+    align-items: center; /* Center the social buttons */
+    gap: 10px; /* Add space between each social link */
+  }
+
+  .social-link {
+    width: 80%; /* Make social buttons wider */
+    text-align: center; /* Center the text inside the buttons */
+    justify-content: center; /* Center both the icon and the text */
+  }
+
+  /* Ensure the icon and text are centered in the social links */
+  .social-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px;
+  }
+  
 }
 
 /* Hamburger menu */
