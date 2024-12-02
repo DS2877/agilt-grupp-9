@@ -1,93 +1,66 @@
-// Mobile screen media queries
 @media screen and (max-width: 670px) {
   .text-below {
     padding: 10px;
     font-size: 1rem;
   }
 }
-
-// Start HEADER styles
-
-header {
-
-  .mobilebar {
-    display: flex;
-    padding: 10px 40px 10px 40px;
-    background-color: rgb(41, 40, 40);
-    height: 5rem;
-  }
-
-  .logo a {
-    font-family: "Freckle Face", system-ui;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    margin-left: 40px;
-    padding: 5px 15px;
-    border-radius: 15px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background: radial-gradient(circle,
-        rgba(130, 57, 183, 1) 0%,
-        rgba(102, 54, 93, 1) 100%);
-  }
-
-  .navdiv {
-    display: none;
-  }
-
-  button {
-    width: 35px;
-    height: 35px;
-    background: blue;
-    border: 0;
-  }
-
-  button span {
-    display: block;
-    height: 3px;
-    width: 25px;
-    background-color: red;
-    border-radius: 6px;
-    margin-bottom: 4px;
-  }
+header .mobilebar {
+  display: flex;
+  padding: 10px 40px 10px 40px;
+  background-color: rgb(41, 40, 40);
+  height: 5rem;
 }
-
-// End HEADER styles
-
-// Start MAIN styles
+header .logo a {
+  font-family: "Freckle Face", system-ui;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
+}
+header .navdiv {
+  display: none;
+}
+header button {
+  width: 35px;
+  height: 35px;
+  background: blue;
+  border: 0;
+}
+header button span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: red;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-
-
-  .text-left-side,
-  .pic-right-side,
-  .text-below {
-    box-sizing: border-box;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #f5f5f5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 100%; // Default for mobile
-  }
-
-  .pic-right-side {
-    background-color: #e8f7ff;
-  }
-
-  .text-below {
-    margin-bottom: 0;
-  }
 }
-
-// End MAIN styles
-
-// Start FOOTER styles
-
-// End FOOTER styles
+main .text-left-side,
+main .pic-right-side,
+main .text-below {
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+main .pic-right-side {
+  background-color: #e8f7ff;
+}
+main .text-below {
+  margin-bottom: 0;
+}
