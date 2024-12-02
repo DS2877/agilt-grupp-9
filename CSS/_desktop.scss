@@ -10,7 +10,7 @@
   header .navbar {
     display: flex;
     padding: 10px 40px 10px 40px;
-    background-color: rgb(41, 40, 40);
+    background-color: black;
     height: 5rem;
   }
 
@@ -32,7 +32,6 @@
 
   header .navdiv li {
     list-style: none;
-    // display: inline-block;
   }
 
   header .navdiv li a {
