@@ -1,120 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockzter inc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Blockzter inc</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" >
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/_mobile.scss" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" >
-  <link rel="stylesheet" href="CSS/_mobile.scss" >
-  <link rel="stylesheet" href="CSS/main.css" >
-</head>
-
-<body>
-  <header>
+  <body>
+    <header>
       <!-- Mobile Nav -->
-    <div class="topnav">
-      <a href="#home" class="active logo">Blockzter</a>
-      
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
+      <div class="topnav">
+        <a href="#home" class="active logo">Blockzter</a>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
           <a href="#news">Home</a>
           <a href="#contact">Products</a>
           <a href="#about">Services</a>
           <a href="#contacts">Contacts</a>
-      </div>
-      
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-          <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </header>
+        </div>
 
-  <main>
-    <!--
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo"><a href="#">Blockzter</a></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--
     <h1>Blockzter</h1>
     -->
-    <div class="content-wrapper">
-      <div class="text-left-side">
-        <h2>Blockchain</h2>
-        <h2>Technology</h2>
-        <h2>is the future</h2>
+      <div class="content-wrapper">
+        <div class="text-left-side">
+          <h2>Blockchain</h2>
+          <h2>Technology</h2>
+          <h2>is the future</h2>
+        </div>
+
+        <div class="pic-right-side">
+          <img src="General/1234.png" alt="Placeholder Image" />
+        </div>
+      </div>
+      <div class="text-below">
+        <p>
+          Blockzter is a forward-thinking company at the forefront of the
+          blockchain revolution. Dedicated to harnessing the power of
+          decentralized technology, Blocktzer develops cutting-edge solutions
+          that empower businesses, individuals, and industries to operate more
+          efficiently, securely, and transparently.
+        </p>
+
+        <p>
+          The company’s expertise spans decentralized finance (DeFi), smart
+          contracts, tokenization, and more. With a commitment to innovation and
+          a vision for a more interconnected world, Blocketz stands as a trusted
+          partner for those looking to navigate the complexities of blockchain
+          technology.
+        </p>
       </div>
 
-      <div class="pic-right-side">
-        <img src="General/1234.png" alt="Placeholder Image" >
+      <div class="button-container">
+        <input class="btn btn-signup" type="button" value="Sign Up" />
+        <input class="btn btn-signin" type="button" value="Sign In" />
       </div>
+    </main>
 
-    </div>
-    <div class="text-below">
-      <p>
-        Blockzter is a forward-thinking company at the forefront of the
-        blockchain revolution. Dedicated to harnessing the power of
-        decentralized technology, Blocktzer develops cutting-edge solutions
-        that empower businesses, individuals, and industries to operate more
-        efficiently, securely, and transparently.
-      </p>
-
-      <p>
-        The company’s expertise spans decentralized finance (DeFi), smart
-        contracts, tokenization, and more. With a commitment to innovation and
-        a vision for a more interconnected world, Blocketz stands as a trusted
-        partner for those looking to navigate the complexities of blockchain
-        technology.
-      </p>
-    </div>
-
-    <div class="button-container">
-      <input class="btn btn-signup" type="button" value="Sign Up" >
-      <input class="btn btn-signin" type="button" value="Sign In" >
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <h2>Blockzter</h2> <!-- Your Brand Name -->
-      <p>&copy; 2024 Blockzter. All rights reserved.</p>
-      <div class="social-links">
-        <!-- Social Media Links with Icons -->
-        <a href="https://www.youtube.com/channel/YourChannelID" target="_blank" class="social-link youtube">
-          <i class="fab fa-youtube"></i> Blockzter
-        </a>
-        <a href="https://twitter.com/YourTwitterHandle" target="_blank" class="social-link twitter">
-          <i class="fab fa-twitter"></i> Blockzter
-        </a>
-        <a href="https://www.facebook.com/YourFacebookProfile" target="_blank" class="social-link facebook">
-          <i class="fab fa-facebook-f"></i> Blockzter
-        </a>
+    <footer>
+      <div class="footer-content">
+        <h2>Blockzter</h2>
+        <!-- Your Brand Name -->
+        <p>&copy; 2024 Blockzter. All rights reserved.</p>
+        <div class="social-links">
+          <!-- Social Media Links with Icons -->
+          <a
+            href="https://www.youtube.com/channel/YourChannelID"
+            target="_blank"
+            class="social-link youtube"
+          >
+            <i class="fab fa-youtube"></i> Blockzter
+          </a>
+          <a
+            href="https://twitter.com/YourTwitterHandle"
+            target="_blank"
+            class="social-link twitter"
+          >
+            <i class="fab fa-twitter"></i> Blockzter
+          </a>
+          <a
+            href="https://www.facebook.com/YourFacebookProfile"
+            target="_blank"
+            class="social-link facebook"
+          >
+            <i class="fab fa-facebook-f"></i> Blockzter
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-    function toggleMenu() {
+    <script>
+      function toggleMenu() {
         const menu = document.getElementById("myLinks");
         const topnav = document.querySelector(".topnav");
         const body = document.body;
 
         // Toggle menu visibility
         if (menu.style.display === "block") {
-            menu.style.display = "none";
-            topnav.classList.remove("menu-open");
-            body.style.overflow = "auto"; // Re-enable scrolling
+          menu.style.display = "none";
+          topnav.classList.remove("menu-open");
+          body.style.overflow = "auto"; // Re-enable scrolling
         } else {
-            menu.style.display = "block";
-            topnav.classList.add("menu-open");
-            body.style.overflow = "hidden"; // Disable scrolling
+          menu.style.display = "block";
+          topnav.classList.add("menu-open");
+          body.style.overflow = "hidden"; // Disable scrolling
         }
-    }
-  </script>
-</body>
-
+      }
+    </script>
+  </body>
 </html>
