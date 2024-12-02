@@ -219,19 +219,24 @@ footer p {
 }
 
 .social-links {
+  display: flex; /* Enables Flexbox */
+  flex-wrap: nowrap; /* Prevents wrapping */
+  justify-content: center; /* Centers the links */
   margin-top: 15px;
+  overflow-x: auto; /* Adds horizontal scroll if needed */
 }
 
 .social-link {
   text-decoration: none;
-  margin: 0 12px;
-  padding: 8px 16px;
+  margin: 0 8px; /* Reduced margin */
+  padding: 8px 12px; /* Adjusted padding */
   border-radius: 4px;
   font-weight: bold;
   color: #e6e6fa;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-flex;
   align-items: center;
+  flex: 0 0 auto; /* Prevents shrinking */
 }
 
 .social-link i {
