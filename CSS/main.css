@@ -180,7 +180,7 @@ a {
     gap: 10px; /* Add space between each social link */
   }
   .social-link {
-    width: 80%; /* Make social buttons wider */
+    width: 35%; /* Make social buttons wider */
     text-align: center; /* Center the text inside the buttons */
     justify-content: center; /* Center both the icon and the text */
   }
@@ -373,14 +373,10 @@ a {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
     font-size: 1rem;
-    text-align: center;
+    text-align: justify;
     max-width: 100%;
     margin: 0 auto;
-    border-radius: 20px;
     background: radial-gradient(circle, rgb(130, 57, 183) 0%, rgb(102, 54, 93) 100%);
   }
   .text-below p {
